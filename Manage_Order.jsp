@@ -46,7 +46,7 @@
                     pri = rs.getString(1);
             }
           
-            int rate=150 ;
+            int rate=Integer.parseInt(quantity)*Integer.parseInt(pri) ;
                 
             PreparedStatement insertProd;
             insertProd = c.prepareStatement("insert into ord_prod values(?,?,?,?,?)");
