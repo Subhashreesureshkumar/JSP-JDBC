@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        form{
+                border:3px solid #000000;    
+                font-size: 36px;
+                background-color:pink;
+               
+            }
+            input
+            {
+            font-size: 36px;
+            }
+       .tocenter{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin:1px;
+                padding:10px;
+            
+            }
+</style>
+</head>
+<body style="background-color:skyblue;">
+<center><h1>Place Orders!!</h1></center>
+<div class="tocenter">
+            
+            <form action="http://localhost:8080/Order_Management_system/Manage_Order.jsp" >
+            Item<input type="text" name="item"><br><br>
+            Quantity<input type="text" name="quantity"><br><br>
+            <input type="submit" value="Submit" name="loginSubmit">
+            </form>
+</div>
+         
+</body>
+</html>
