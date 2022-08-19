@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+        form{
+                border:3px solid #000000;    
+                font-size: 36px;
+                background-color:pink;
+               
+            }
+            input
+            {
+            font-size:28px;
+            }
+       .tocenter{
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin:1px;
+                padding:2px;
+            
+            }
+</style>
+</head>
+<body style="background-color:skyblue;">
+<center><h2>ADMIN LOGIN</h2></center>
+<div class="tocenter">
+            
+            <form name="Admin_Form" action="http://localhost:8080/Order_Management_system/Administrator.html" onsubmit="validateform()">
+            User Name:<input type="text" name="name"><br><br>
+            Password:<input type="password" name="pwd"><br><br>
+            <input type="submit" value="Submit" name="Submit">
+<script>
+function validateform()
+{
+   
+    var name=document.forms["Admin_Form"]["name"].value;
+    
+    var name_regex=/^[A-Za-z]$/;
+   
+    
+    if(name==null)
+    {
+        alert("Please fill the name!");
+        return false;
+    }
+    if(!name.match(name_regex))
+    {
+      alert("Give the name in correct format!!");
+      return false;
+    }
+}
+</script>
+</body>
+</html>
